@@ -8,19 +8,6 @@
   "license": "MIT",
   "author": "elianiva",
   "main": "./index.ts",
-  "files": [
-    "index.ts",
-    "create-picker.ts",
-    "types.ts",
-    "builtin/fff.ts",
-    "builtin/grep.ts",
-    "builtin/git.ts",
-    "builtin/jj.ts",
-    "builtin/vcs-base.ts",
-    "bin",
-    "README.md",
-    "LICENSE"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/elianiva/dotfiles.git",
