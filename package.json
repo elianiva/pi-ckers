@@ -1,0 +1,73 @@
+{
+  "name": "@elianiva/pi-ckers",
+  "version": "1.0.0",
+  "description": "Modular namespace pickers for pi: @file:, @git:, @jj:",
+  "keywords": [
+    "pi-package"
+  ],
+  "license": "MIT",
+  "author": "elianiva",
+  "main": "./index.ts",
+  "files": [
+    "index.ts",
+    "create-picker.ts",
+    "types.ts",
+    "builtin/fff.ts",
+    "builtin/grep.ts",
+    "builtin/git.ts",
+    "builtin/jj.ts",
+    "builtin/vcs-base.ts",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elianiva/dotfiles.git",
+    "directory": "packages/pi-ckers"
+  },
+  "bugs": {
+    "url": "https://github.com/elianiva/dotfiles/issues"
+  },
+  "homepage": "https://github.com/elianiva/dotfiles/tree/main/packages/pi-ckers",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": {
+      "default": "./index.ts"
+    },
+    "./types": {
+      "default": "./types.ts"
+    },
+    "./builtin/fff": {
+      "default": "./builtin/fff.ts"
+    },
+    "./builtin/grep": {
+      "default": "./builtin/grep.ts"
+    },
+    "./builtin/git": {
+      "default": "./builtin/git.ts"
+    },
+    "./builtin/jj": {
+      "default": "./builtin/jj.ts"
+    },
+    "./builtin/vcs-base": {
+      "default": "./builtin/vcs-base.ts"
+    }
+  },
+  "dependencies": {
+    "koffi": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-tui": "*",
+    "@sinclair/typebox": "*"
+  },
+  "trustedDependencies": [
+    "koffi"
+  ],
+  "devDependencies": {
+    "@types/node": "^25.3.5"
+  }
+}
