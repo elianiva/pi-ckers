@@ -16,7 +16,7 @@ This also makes it extensible because you can have different namespaces, for exa
 
 **Overrides editor**: Since this wraps/replaces the editor component, it can't be an auto-loading extension because you may have other extension that already overrides the editor. The extension loading in Pi have no particular order, so you can't stack overriding editors. The way you use this extension is explicitly opt-in by wrapping your editor with `withPickers()`.
 
-See how I use it [in my configuration](https://github.com/elianiva/dotfiles/blob/main/agents/pi/extensions/composed-editor).
+See how I use it [in my configuration](https://github.com/elianiva/dotfiles/blob/master/agents/pi/extensions/composed-editor).
 
 ## Installation
 
