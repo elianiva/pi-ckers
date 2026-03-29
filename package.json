@@ -1,6 +1,6 @@
 {
   "name": "@elianiva/pi-ckers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Modular namespace pickers for pi: @file:, @git:, @jj:",
   "keywords": [
     "pi-package"
