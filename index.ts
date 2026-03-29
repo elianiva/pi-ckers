@@ -96,7 +96,7 @@ export function withPickers<T extends CustomEditorConstructor>(
 
     setAutocompleteProvider(defaultProvider: AutocompleteProvider): void {
       const pickersProvider: AutocompleteProvider = {
-        getSuggestions: (lines, cursorLine, cursorCol) => {
+        getSuggestions: (lines, cursorLine, cursorCol, opts) => {
           const currentLine = lines[cursorLine] ?? "";
           const textBeforeCursor = currentLine.slice(0, cursorCol);
 
@@ -130,7 +130,7 @@ export function withPickers<T extends CustomEditorConstructor>(
             }
           }
 
-          return defaultProvider.getSuggestions(lines, cursorLine, cursorCol);
+          return defaultProvider.getSuggestions(lines, cursorLine, cursorCol, opts);
         },
 
         applyCompletion: (lines, cursorLine, cursorCol, item, prefix) => {

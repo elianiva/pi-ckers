@@ -44,17 +44,17 @@
     }
   },
   "dependencies": {
-    "koffi": "^2.0.0"
+    "koffi": "^2.15.2"
   },
   "peerDependencies": {
-    "@mariozechner/pi-coding-agent": "*",
-    "@mariozechner/pi-tui": "*",
-    "@sinclair/typebox": "*"
+    "@mariozechner/pi-coding-agent": "^0.64.0",
+    "@mariozechner/pi-tui": "^0.64.0",
+    "@sinclair/typebox": "^0.34.49"
   },
   "trustedDependencies": [
     "koffi"
   ],
   "devDependencies": {
-    "@types/node": "^25.3.5"
+    "@types/node": "^25.5.0"
   }
 }
